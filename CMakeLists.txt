@@ -11,6 +11,6 @@ endif()
 
 if(OpenCV_FOUND)
 	include_directories(${OpenCV_INCLUDE_DIRS})
-	add_executable(cvtcolor_neon ${SOURCES})
-	target_link_libraries(cvtcolor_neon ${OpenCV_LIBS})
+	add_executable(${PROJECT_NAME} ${SOURCES})
+	target_link_libraries(${PROJECT_NAME} ${OpenCV_LIBS})
 endif(OpenCV_FOUND)
